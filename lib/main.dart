@@ -21,7 +21,7 @@ void main() async {
      * rootBundle.load('assets/test.jpg')
      * .then((data) => setState(() => this.imageData = data));
      */
-    ByteData bytes = await rootBundle.load('assets/images/logo.png');
+    ByteData bytes = await rootBundle.load('assets/images/robo-cat.usdz');
     final image =
         ArCoreImage(height: 250, width: 250, bytes: bytes.buffer.asUint8List());
     final secondNode = ArCoreNode(
